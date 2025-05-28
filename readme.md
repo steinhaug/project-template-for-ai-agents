@@ -98,16 +98,91 @@ Overgangssignaler til kodemodus inkluderer tekniske constraints, feilmeldinger, 
 4. **Les AI-guidene** i `/templates/twig/_ai_guide.md`
 5. **Utforsk komponentene** via `_meta.json` filer
 
-## Vedlikehold
 
-Se `/docs/maintaining-twig-files.md` for fullstendig veiledning om hvordan holde meta-informasjon oppdatert ved endringer i templates.
+## Installation
 
-## Fremtidige Forbedringer
+### Prerequisites
 
-- **Automatisk generering** av `_meta.json` fra template docblocks
-- **Utvidet komponentbibliotek** med flere UI-elementer
-- **Automatiserte tester** for template-parametere
+Before you can run this project, ensure you have the following installed:
+
+- **Composer** (PHP dependency manager)
+- **Node.js & npm** (JavaScript dependency manager) 
+- **Web server** capable of serving PHP 8.2+ files (Apache, Nginx, or built-in PHP server)
+
+### Quick Setup
+
+1. **Clone the repository** and navigate to the project directory in your terminal
+
+2. **Install dependencies:**
+   ```bash
+   composer install
+   npm install
+   ```
+
+3. **Configure credentials:**
+   - Copy `_credentials.php` to `credentials.php` in the project root
+   - Update `credentials.php` with your actual database/API credentials
+   - **Important**: Never commit `credentials.php` to Git (it's in .gitignore)
+
+4. **Set up web server** to serve files from the `public_html/` directory
+
+5. **Access your application** through your web server
+
+### Development Workflow
+
+#### Before Making Changes
+
+**Read the documentation first!** Check the `/docs` folder for project-specific guidelines and requirements that must be maintained at all times.
+
+#### Working with Templates & Styles
+
+Changes to certain directories require additional build processes:
+
+- **Templates** (`/templates/`): Follow Twig templating guidelines in project docs
+- **Styles** (`/tailwind/`): Requires CSS compilation - see styling guidelines below
+
+#### Custom Styling
+
+When adding custom CSS styles:
+
+1. Create new `.scss` files in `/tailwind/` directory
+2. **Required**: Start each new file with comments explaining purpose and rationale
+3. Include the new file in `/tailwind/tailwind-combo.scss`
+4. Run build process: `npm run build`
+
+### Maintaining Credentials
+
+- **Active file**: `credentials.php` (not in Git)
+- **Template file**: `_credentials.php` (tracked in Git)
+- **Rule**: Any changes to `credentials.php` must also be reflected in `_credentials.php` template
+- The template file should always represent 100% of the structure/values used in the system
+
+### Build Commands
+
+- `npm run build` - Compile Tailwind CSS for production
+- `composer install` - Install/update PHP dependencies  
+- `npm install` - Install/update Node.js dependencies
+
+### Project Structure
+
+```
+/docs              # Project documentation and guidelines
+/logs              # Apache logs
+/node_modules      # Node.js dependencies
+/public_html       # Public web files (document root)
+/src               # Custom business logic
+/tailwind          # Custom styles and Tailwind config
+/templates         # Twig templates with metadata
+/vendor            # Composer dependencies
+credentials.php    # Local credentials (not in Git)
+_credentials.php   # Credential template (in Git)
+```
 
 ---
 
 **Mål**: Skape et miljø hvor AI kan generere produktionsklar PHP-kode med minimal menneskelig intervensjon, samtidig som koden forblir vedlikeholdbar og utvidbar.
+
+## Credits
+
+kim at steinhaug dot com
+
