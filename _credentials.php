@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
+
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'php_app');
 define('DB_USER', 'root');
