@@ -32,8 +32,8 @@ $GLOBALS['twig_env'] = new \Twig\Environment($GLOBALS['twig_loader'], [
  * @param array $data - Data to pass to template
  * @return string - Rendered HTML
  * 
- * @ai-meta Look for _meta.json files in template directories for component usage
- * @ai-guide /templates/twig/_ai_guide.md Usage patterns and syntax
+ * @ai-meta Look for .meta.json files in template directories for component usage
+ * @ai-guide /docs-ai/how-to-render-twig-templates.md Usage patterns and syntax
  */
 function twig($template, $data = []) {
     // Remove @ prefix

@@ -17,14 +17,14 @@ AI-generert kode er bare så god som konteksten den får. Dette prosjektet imple
 ## AI-optimaliserte Teknikker
 
 ### 1. Strukturert Dokumentasjon
-- **Meta-filer**: `_meta.json` i alle template-mapper dokumenterer komponentparametere
+- **Meta-filer**: `.meta.json` i alle template-mapper dokumenterer komponentparametere
 - **AI-guider**: Spesialiserte `.md` filer for AI-agent instruksjoner
 - **Konsistent navngivning**: Forutsigbare mønstre for mapper og filer
 
 ### 2. Intelligent Docblock-strategier
 ```php
 /**
- * @ai-meta _meta.json files in template directories for component parameters
+ * @ai-meta .meta.json files in template directories for component parameters
  * @ai-guide /templates/twig/_ai_guide.md Usage patterns and syntax
  */
 ```
@@ -72,13 +72,13 @@ echo twig('@components/button.twig', [
 Automatisk dark mode i alle komponenter uten ekstra konfigurasjon.
 
 ### Dokumenterte Parametere
-Alle komponenter har dokumenterte parametere i tilhørende `_meta.json` filer.
+Alle komponenter har dokumenterte parametere i tilhørende `.meta.json` filer.
 
 ## Beste Praksis for AI-assistert Utvikling
 
 ### For AI-agenter som arbeider med dette prosjektet:
 
-1. **Les meta-filer først** - Sjekk `_meta.json` før du foreslår komponentbruk
+1. **Les meta-filer først** - Sjekk `.meta.json` før du foreslår komponentbruk
 2. **Følg etablerte mønstre** - Bruk eksisterende konvensjoner for konsistens
 3. **Oppdater dokumentasjon** - Ved endringer, oppdater tilhørende meta-filer
 4. **Test komponentparametere** - Verifiser at alle obligatoriske parametere er inkludert
@@ -95,8 +95,8 @@ Overgangssignaler til kodemodus inkluderer tekniske constraints, feilmeldinger, 
 1. **Klon prosjektet**
 2. **Installer avhengigheter**: `composer install && npm install`
 3. **Kompiler CSS**: `npm run build`
-4. **Les AI-guidene** i `/templates/twig/_ai_guide.md`
-5. **Utforsk komponentene** via `_meta.json` filer
+4. **Les hensyn som gjelder for prosjektet** i `/docs`
+5. **Utforsk komponentene** via `.meta.json` filer
 
 
 ## Installation
