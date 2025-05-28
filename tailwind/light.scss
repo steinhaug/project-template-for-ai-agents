@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+// Dine light theme customizations her
+@theme {
+  --color-primary: #3b82f6;
+}
+
+@import "./custom/custom.scss";
