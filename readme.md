@@ -25,7 +25,7 @@ AI-generert kode er bare så god som konteksten den får. Dette prosjektet imple
 ```php
 /**
  * @ai-meta .meta.json files in template directories for component parameters
- * @ai-guide /templates/twig/_ai_guide.md Usage patterns and syntax
+ * @ai-guide /docs-ai/how-to-render-twig-templates.md Usage patterns and syntax
  */
 ```
 AI-spesifikke tags i docblocks som peker mot relevant kontekst uten å forurense standard dokumentasjon.
@@ -145,10 +145,10 @@ Changes to certain directories require additional build processes:
 
 When adding custom CSS styles:
 
-1. Create new `.scss` files in `/tailwind/` directory
-2. **Required**: Start each new file with comments explaining purpose and rationale
-3. Include the new file in `/tailwind/tailwind-combo.scss`
-4. Run build process: `npm run build`
+1. Create .scss file in /tailwind/custom-styles/ with descriptive name
+2. Start file with detailed comment block explaining purpose and usage
+3. Write CSS code - no limitations on complexity
+4. Run npm run ai-agent-rebuild to auto-generate imports and build
 
 ### Maintaining Credentials
 
@@ -159,9 +159,13 @@ When adding custom CSS styles:
 
 ### Build Commands
 
-- `npm run build` - Compile Tailwind CSS for production
-- `composer install` - Install/update PHP dependencies  
-- `npm install` - Install/update Node.js dependencies
+- `composer install` - Install/update PHP dependencies   
+- `npm install` - Install/update Node.js dependencies  
+
+- `npm run build` - Compile Tailwind CSS for production  
+- `watch` - Re-build with watch adedde for auto-rebuilds  
+- `ai-agent-rebuild` - AI Agent re-build command  
+- `rebuild` - Human re-build command  
 
 ### Project Structure
 

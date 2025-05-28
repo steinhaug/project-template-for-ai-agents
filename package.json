@@ -6,11 +6,7 @@
     "build": "npx @tailwindcss/cli -i ./tailwind/tailwind-combo.scss -o ./public_html/dist/css/tailwind.css",
     "watch": "npx @tailwindcss/cli -i ./tailwind/tailwind-combo.scss -o ./public_html/dist/css/tailwind.css --watch",
     "ai-agent-rebuild": "php dev-tools/scripts/generate-tailwind-imports.php",
-    "rebuild": "php dev-tools/scripts/generate-tailwind-imports.php",
-    "build:light": "npx @tailwindcss/cli -i ./tailwind/light.scss -o ./public_html/dist/css/tailwind.light.css",
-    "build:dark": "npx @tailwindcss/cli -i ./tailwind/dark.scss -o ./public_html/dist/css/tailwind.dark.css", 
-    "watch:light": "npx @tailwindcss/cli -i ./tailwind/light.scss -o ./public_html/dist/css/tailwind.light.css --watch",
-    "watch:dark": "npx @tailwindcss/cli -i ./tailwind/dark.scss -o ./public_html/dist/css/tailwind.dark.css --watch"
+    "rebuild": "php dev-tools/scripts/generate-tailwind-imports.php"
   },
   "keywords": [],
   "author": "",
