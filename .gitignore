@@ -6,4 +6,5 @@
 /MyApp-PHP-main/**/*
 /logs/**/*
 /templates/cache/**/*
-/public_html/css/tailwind.css
+/public_html/dist/css/tailwind.css
+/site/**/*
