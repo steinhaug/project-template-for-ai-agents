@@ -1,0 +1,5 @@
+/vendor/**/*
+/node_modules/**/*
+/credentials.php
+/composer.lock
+/package-lock.json
