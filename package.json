@@ -1,0 +1,21 @@
+{
+  "name": "radarspotter",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./tailwind/tailwind-combo.scss -o ./public_html/css/tailwind.css",
+    "watch": "npx @tailwindcss/cli -i ./tailwind/tailwind-combo.scss -o ./public_html/css/tailwind.css --watch",
+    "build:light": "npx @tailwindcss/cli -i ./tailwind/light.scss -o ./public_html/css/tailwind.light.css",
+    "build:dark": "npx @tailwindcss/cli -i ./tailwind/dark.scss -o ./public_html/css/tailwind.dark.css", 
+    "watch:light": "npx @tailwindcss/cli -i ./tailwind/light.scss -o ./public_html/css/tailwind.light.css --watch",
+    "watch:dark": "npx @tailwindcss/cli -i ./tailwind/dark.scss -o ./public_html/css/tailwind.dark.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "proprietary",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}

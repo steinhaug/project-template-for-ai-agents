@@ -3,3 +3,7 @@
 /credentials.php
 /composer.lock
 /package-lock.json
+/MyApp-PHP-main/**/*
+/logs/**/*
+/templates/cache/**/*
+/public_html/css/tailwind.css
