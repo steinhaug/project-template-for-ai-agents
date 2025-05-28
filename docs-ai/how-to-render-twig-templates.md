@@ -1,6 +1,6 @@
 # TWIG Rendering System - AI Guide (Condensed)
 
-The [AI Guide - Full](_ai_guide.full.md) is located here.  
+The [AI Guide - Full](how-to-render-twig-templates--full.md) is located here.  
 
 ## Syntax
 ```php

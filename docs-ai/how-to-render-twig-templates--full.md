@@ -1,6 +1,6 @@
 # TWIG Rendering System - Complete AI Guide
 
-The [AI Guide - Condensed](_ai_guide.md) is located here.  
+The [AI Guide - Condensed](how-to-render-twig-templates.md) is located here.  
 
 ## Overview
 This system uses a custom `twig()` function for elegant template rendering with automatic path resolution and parameter validation.
