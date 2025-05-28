@@ -42,13 +42,21 @@ This is a **proprietary PHP project** using modern tooling and strict developmen
 - Data types and default values
 - Usage examples with proper syntax
 
-### 3. PROJECT DOCUMENTATION
+### 3. PROJECT DOCUMENTATION & AI CONTEXT
 
 **Critical**: Always consult `/docs` folder before making changes. This contains:
 - Project-specific constraints
-- Architectural decisions
+- Architectural decisions  
 - Maintenance requirements
 - License compliance rules
+
+**AI Context Files** (following GitHub Copilot conventions):
+- `.github/copilot-instructions.md` - Repository-wide AI instructions
+- `.github/prompts/*.prompt.md` - Reusable prompt templates for specific tasks
+- Each `/docs/*.md` file has accompanying `*.md.ai` file for token-optimized AI context
+- Local `.instructions.md` files provide folder-specific guidance
+
+**Context Hierarchy**: Repository instructions → Prompt files → Local instructions → Documentation
 
 ## KODEGENERERING - MINIMALISTISK TILNÆRMING
 
