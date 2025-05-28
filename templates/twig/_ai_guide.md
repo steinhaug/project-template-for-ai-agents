@@ -1,11 +1,13 @@
 # TWIG Rendering System - AI Guide (Condensed)
 
+The [AI Guide - Full](_ai_guide.full.md) is located here.  
+
 ## Syntax
 ```php
 echo twig('@path/template.twig', ['param' => 'value']);
 ```
 
-## Path Rules
+## Path Rulesv
 - `@` prefix required
 - `@components/card.twig` → `/templates/twig/components/card.twig`
 - `@layout.twig` → `/templates/twig/layout.twig` (root level)
